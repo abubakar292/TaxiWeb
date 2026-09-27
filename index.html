@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Khyber-E-Taxi | Local Taxi Service</title>
+
+    <meta name="description"
+          content="Khyber-E-Taxi provides reliable and comfortable local taxi services across Peshawar and surrounding areas.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <!-- LOGO -->
+        <a href="#home" class="logo">
+
+            <div class="logo-icon">
+                🚕
+            </div>
+
+            <div class="logo-text">
+                <strong>Khyber-E-Taxi</strong>
+                <span>LOCAL RIDES • PESHAWAR</span>
+            </div>
+
+        </a>
+
+
+        <!-- DESKTOP MENU -->
+
+        <nav class="nav-menu">
+
+            <a href="#booking">Book a Ride</a>
+
+            <a href="#areas">Service Areas</a>
+
+            <a href="#about">About Us</a>
+
+            <a href="#contact">Contact Us</a>
+
+            <a href="#how-it-works">How It Works</a>
+
+            <a href="#cars">Our Cars</a>
+
+        </nav>
+
+
+        <!-- BOOK BUTTON -->
+
+        <a href="#booking" class="nav-book">
+            Book Now
+        </a>
+
+
+        <!-- MOBILE BUTTON -->
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            ☰
+        </button>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#booking">Book a Ride</a>
+
+        <a href="#areas">Service Areas</a>
+
+        <a href="#about">About Us</a>
+
+        <a href="#contact">Contact Us</a>
+
+        <a href="#how-it-works">How It Works</a>
+
+        <a href="#cars">Our Cars</a>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            🚕 LOCAL TAXI SERVICE • PESHAWAR
+        </div>
+
+        <h1>
+            Your Ride.
+            <br>
+            <span>Our Responsibility.</span>
+        </h1>
+
+        <p>
+            Comfortable, reliable and affordable taxi rides
+            for your everyday journeys across Peshawar
+            and surrounding communities.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#booking" class="primary-btn">
+                Book a Ride
+                <span>→</span>
+            </a>
+
+            <!-- CHANGE WHATSAPP NUMBER HERE -->
+
+            <a href="https://wa.me/923001234567"
+               target="_blank"
+               class="whatsapp-btn">
+
+                <span>💬</span>
+                WhatsApp Us
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-features">
+
+            <div>
+                <strong>✓</strong>
+                Local Drivers
+            </div>
+
+            <div>
+                <strong>✓</strong>
+                Easy Booking
+            </div>
+
+            <div>
+                <strong>✓</strong>
+                Comfortable Cars
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BOOKING SECTION
+===================================================== -->
+
+<section class="booking-section" id="booking">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span class="small-title">
+                QUICK BOOKING
+            </span>
+
+            <h2>
+                Where are you going?
+            </h2>
+
+            <p>
+                Enter your journey details and send your ride request
+                directly to our WhatsApp.
+            </p>
+
+        </div>
+
+
+        <div class="booking-card">
+
+            <form id="bookingForm">
+
+                <div class="form-grid">
+
+                    <!-- PICKUP -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Pickup Location
+                        </label>
+
+                        <div class="input-box">
+
+                            <span>📍</span>
+
+                            <input
+                                type="text"
+                                id="pickup"
+                                placeholder="Enter pickup point"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DESTINATION -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Destination
+                        </label>
+
+                        <div class="input-box">
+
+                            <span>📍</span>
+
+                            <input
+                                type="text"
+                                id="destination"
+                                placeholder="Where are you going?"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DATE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Pickup Date
+                        </label>
+
+                        <div class="input-box">
+
+                            <span>📅</span>
+
+                            <input
+                                type="date"
+                                id="rideDate"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TIME -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Pickup Time
+                        </label>
+
+                        <div class="input-box">
+
+                            <span>⏰</span>
+
+                            <input
+                                type="time"
+                                id="rideTime"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Your Name
+                        </label>
+
+                        <div class="input-box">
+
+                            <span>👤</span>
+
+                            <input
+                                type="text"
+                                id="customerName"
+                                placeholder="Full name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Phone Number
+                        </label>
+
+                        <div class="input-box">
+
+                            <span>📞</span>
+
+                            <input
+                                type="tel"
+                                id="customerPhone"
+                                placeholder="03XX-XXXXXXX"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="booking-bottom">
+
+                    <div class="secure-text">
+
+                        🔒
+                        Your booking request is sent securely
+                        through WhatsApp.
+
+                    </div>
+
+                    <button type="submit" class="booking-submit">
+
+                        Request This Ride
+                        <span>→</span>
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICE AREAS
+===================================================== -->
+
+<section class="areas-section" id="areas">
+
+    <div class="section-container">
+
+        <div class="section-heading center">
+
+            <span class="small-title">
+                SERVICE AREAS
+            </span>
+
+            <h2>
+                We serve your neighborhood.
+            </h2>
+
+            <p>
+                Khyber-E-Taxi connects local communities
+                with reliable taxi transportation.
+            </p>
+
+        </div>
+
+
+        <div class="areas-grid">
+
+            <div class="area-card">
+                <span>📍</span>
+                <h3>Shalober</h3>
+                <p>Local taxi service</p>
+            </div>
+
+            <div class="area-card">
+                <span>📍</span>
+                <h3>Qamber Khel</h3>
+                <p>Local taxi service</p>
+            </div>
+
+            <div class="area-card">
+                <span>📍</span>
+                <h3>Aka Khel</h3>
+                <p>Local taxi service</p>
+            </div>
+
+            <div class="area-card">
+                <span>📍</span>
+                <h3>Malik Din Khel</h3>
+                <p>Local taxi service</p>
+            </div>
+
+            <div class="area-card">
+                <span>📍</span>
+                <h3>Sepah</h3>
+                <p>Local taxi service</p>
+            </div>
+
+            <div class="area-card">
+                <span>📍</span>
+                <h3>Hayatabad</h3>
+                <p>Local taxi service</p>
+            </div>
+
+            <div class="area-card">
+                <span>📍</span>
+                <h3>Peshawar</h3>
+                <p>City-wide service</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT US
+===================================================== -->
+
+<section class="about-section" id="about">
+
+    <div class="about-container">
+
+        <div class="about-image">
+
+            <div class="image-badge">
+
+                <strong>24/7</strong>
+                <span>Local Support</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="small-title">
+                ABOUT KHYBER-E-TAXI
+            </span>
+
+            <h2>
+                Local service.
+                <br>
+                <span>Local trust.</span>
+            </h2>
+
+            <p>
+                Khyber-E-Taxi is a local taxi service designed
+                to make everyday transportation easier for
+                families, students, workers and visitors.
+            </p>
+
+            <p>
+                We focus on comfortable rides, friendly service,
+                simple booking and dependable local transportation.
+            </p>
+
+
+            <div class="about-points">
+
+                <div>
+                    <span>✓</span>
+                    Experienced local drivers
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Easy WhatsApp booking
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Comfortable vehicles
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Service across local areas
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HOW IT WORKS
+===================================================== -->
+
+<section class="how-section" id="how-it-works">
+
+    <div class="section-container">
+
+        <div class="section-heading center">
+
+            <span class="small-title">
+                HOW IT WORKS
+            </span>
+
+            <h2>
+                Book your ride in 3 simple steps.
+            </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div class="step-icon">
+                    📋
+                </div>
+
+                <h3>
+                    Enter Your Details
+                </h3>
+
+                <p>
+                    Tell us your pickup location,
+                    destination, date and time.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div class="step-icon">
+                    💬
+                </div>
+
+                <h3>
+                    Send Request
+                </h3>
+
+                <p>
+                    Your booking information opens
+                    directly in WhatsApp.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div class="step-icon">
+                    🚕
+                </div>
+
+                <h3>
+                    Enjoy Your Ride
+                </h3>
+
+                <p>
+                    Our driver confirms your ride
+                    and picks you up.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OUR CARS
+===================================================== -->
+
+<section class="cars-section" id="cars">
+
+    <div class="section-container">
+
+        <div class="section-heading center">
+
+            <span class="small-title">
+                OUR CARS
+            </span>
+
+            <h2>
+                Comfortable rides for every journey.
+            </h2>
+
+        </div>
+
+
+        <div class="cars-grid">
+
+
+            <div class="car-card">
+
+                <div class="car-image sedan">
+                    🚕
+                </div>
+
+                <div class="car-info">
+
+                    <h3>
+                        Economy Taxi
+                    </h3>
+
+                    <p>
+                        Comfortable and affordable
+                        for everyday local travel.
+                    </p>
+
+                    <div class="car-details">
+
+                        <span>
+                            👤 4 Passengers
+                        </span>
+
+                        <span>
+                            🧳 2 Bags
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="car-card featured-car">
+
+                <div class="popular">
+                    POPULAR
+                </div>
+
+                <div class="car-image family">
+                    🚖
+                </div>
+
+                <div class="car-info">
+
+                    <h3>
+                        Family Ride
+                    </h3>
+
+                    <p>
+                        Extra space for families
+                        and longer journeys.
+                    </p>
+
+                    <div class="car-details">
+
+                        <span>
+                            👤 5 Passengers
+                        </span>
+
+                        <span>
+                            🧳 3 Bags
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="car-card">
+
+                <div class="car-image premium">
+                    🚘
+                </div>
+
+                <div class="car-info">
+
+                    <h3>
+                        Premium Ride
+                    </h3>
+
+                    <p>
+                        A more comfortable option
+                        for special journeys.
+                    </p>
+
+                    <div class="car-details">
+
+                        <span>
+                            👤 4 Passengers
+                        </span>
+
+                        <span>
+                            🧳 3 Bags
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-container">
+
+        <div class="contact-text">
+
+            <span class="small-title">
+                CONTACT US
+            </span>
+
+            <h2>
+                Need a ride?
+                <br>
+                <span>Talk to us.</span>
+            </h2>
+
+            <p>
+                Contact Khyber-E-Taxi directly through
+                WhatsApp or email.
+            </p>
+
+        </div>
+
+
+        <div class="contact-buttons">
+
+            <!-- CHANGE WHATSAPP NUMBER -->
+
+            <a href="https://wa.me/923001234567"
+               target="_blank"
+               class="contact-whatsapp">
+
+                <span class="contact-icon">
+                    💬
+                </span>
+
+                <div>
+
+                    <strong>
+                        WhatsApp
+                    </strong>
+
+                    <small>
+                        Chat with us
+                    </small>
+
+                </div>
+
+                <span>→</span>
+
+            </a>
+
+
+            <!-- CHANGE EMAIL -->
+
+            <a href="mailto:khybere.taxi@gmail.com"
+               class="contact-email">
+
+                <span class="contact-icon">
+                    ✉️
+                </span>
+
+                <div>
+
+                    <strong>
+                        Email
+                    </strong>
+
+                    <small>
+                        Send us an email
+                    </small>
+
+                </div>
+
+                <span>→</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+
+                <div class="logo-icon">
+                    🚕
+                </div>
+
+                <strong>
+                    Khyber-E-Taxi
+                </strong>
+
+            </div>
+
+            <p>
+                Reliable local rides across
+                Peshawar and surrounding communities.
+            </p>
+
+            <a href="#booking" class="footer-book">
+                Book a Ride →
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Navigation
+            </h4>
+
+            <a href="#booking">
+                Book a Ride
+            </a>
+
+            <a href="#areas">
+                Service Areas
+            </a>
+
+            <a href="#about">
+                About Us
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Information
+            </h4>
+
+            <a href="#contact">
+                Contact Us
+            </a>
+
+            <a href="#how-it-works">
+                How It Works
+            </a>
+
+            <a href="#cars">
+                Our Cars
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+            <!-- CHANGE PHONE -->
+
+            <a href="tel:+923001234567">
+                📞 0300-1234567
+            </a>
+
+            <!-- CHANGE EMAIL -->
+
+            <a href="mailto:khybere.taxi@gmail.com">
+                ✉️ khybere.taxi@gmail.com
+            </a>
+
+            <span>
+                📍 Peshawar, Khyber Pakhtunkhwa
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="currentYear"></span>
+            Khyber-E-Taxi. All rights reserved.
+        </p>
+
+        <p>
+            Local Rides • Local Trust
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT FILE -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
