@@ -143,7 +143,7 @@ Khyber-E-Taxi`;
     */
 
     const whatsappNumber =
-        "923338268708";
+        "923029620001";
 
 
     /* Create WhatsApp URL */
